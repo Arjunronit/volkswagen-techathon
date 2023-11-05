@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maintenance Duration Prediction - Result</title>
+    <link rel="stylesheet" type="text/css" href=""> <!-- Include your CSS file here -->
+    <style>
+        /* Add custom CSS for this page */
+        /* Reset some default styles */
+        body,
+        h1,
+        ul {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* Style the header */
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Style the form */
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input {
+            width: 96.5%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            display: block;
+            margin-top: 15px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Style the navigation buttons */
+        .nav-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 6px 12px;
+            /* Adjust the padding for a smaller size */
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Style the links in the footer */
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Center align the text inside the footer */
+        footer p {
+            margin: 0;
+        }
+
+        /* Adjust the text size for smaller screens */
+        @media (max-width: 767px) {
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            /* Adjust the width as needed */
+            height: auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+
+        .nav-button {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 80px auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .background-container {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .result-label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .result-value {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/OIP.yR1GfVX5c5v9Upd3BmUcugHaD-" alt="Logo" class="logo">
+        <h1>Maintenance Duration Prediction</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="volkswagen.html" class="nav-button">Home</a></li>
+            <li><a href="#about" class="nav-button">About</a></li>
+            <li><a href="#contact" class="nav-button">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="center-container">
+            <div class="background-container">
+                <h2>Result</h2>
+                <div id="result-content">
+                    <p class="result-label">Year: {{year}}</p>
+                    <p class="result-label">Selling Price:{{selling_price}}</p>
+                    <p class="result-label">Km Driven: {{km_driven}}</p>
+                    <p class="result-label">Result: {{result}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="">
+            &copy; 2023 Maintenance Duration Prediction
+        </div>
+    </footer>
+    
+</body>
+
+</html>

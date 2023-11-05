@@ -1,0 +1,7 @@
+Python: Python 3.8.2
+Pandas: 1.0.3
+scikit-learn: 1.0.2
+Django: 3.0.3
+HTML, CSS, JavaScript: Latest versions at the time of development 
+Visual Studio Code: Latest version available at the time of development
+GradientBoostingRegressor: From the scikit-learn version mentioned
